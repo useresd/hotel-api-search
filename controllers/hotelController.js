@@ -5,7 +5,6 @@ const sortObjectsArray = require('sort-objects-array');
 exports.index = (req, res) => {
     
     superagent.get('http://fake-hotel-api.herokuapp.com/api/hotels')
-
         .then(response => {
 
             // fetch hotel list from the api
@@ -57,7 +56,6 @@ exports.index = (req, res) => {
 
             // search by hotel name
             if(req.query.hotelName) {
-
                 params.hotelName = req.query.hotelName;
                 hotels = hotels.filter(each => each.name.toLowerCase().indexOf(req.query.hotelName.toLowerCase()) > -1);
             }
