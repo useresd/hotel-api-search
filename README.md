@@ -15,19 +15,19 @@ query parameters: priceRange, hotelName, dateRange, destination, sortBy
 
 ## Query Parameters
 
-### priceRange
+### priceRange [100:900]
 Should be in the range format 100:900. Where first number should always be less than the second one!
 
-### hotelName
+### hotelName [name]
 hotelName is a string to find the hotel by its name.
 
-### dateRange
+### dateRange [2020-01-01:2020-05-10]
 Should be in the range format 2020-01-01:2020-05-10. The first date should be less than the second date! date is to be supplied in the ISO format!
 
-### destination
+### destination [city]
 String to search the city of the hotel
 
-### sortBy
+### sortBy [name:asc]
 sortBy is composed of two sections! parameter:direction.  
 The first section should be either name or price! The second section is optional and have a default value of asc! but both asc and desc can be provided to sort the result!
 
