@@ -1,0 +1,21 @@
+{
+  "name": "hotels",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.3",
+    "sort-objects-array": "^1.7.1",
+    "superagent": "^5.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon",
+    "start": "node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
